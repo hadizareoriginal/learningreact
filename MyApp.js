@@ -52,7 +52,7 @@ export default class MyApp extends Component {
           ref={WEBVIEW_REF}
           style={{ flex: 1 }}
           onNavigationStateChange={this.onNavigationStateChange.bind(this)}
-          source={{ uri: "https://google.com" }} // or uri : "https//site.com" *NOTE: no goback() with tweethtml
+          source={{ html: tweethtml }} // or uri : "https//site.com" *NOTE: no goback() with tweethtml
         />
       </View>
     );
